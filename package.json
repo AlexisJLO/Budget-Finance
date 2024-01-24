@@ -1,0 +1,31 @@
+{
+    "name": "Budget_Finance",
+    "version": "1.0.0",
+    "description": "Welcome to Budget_Finance - your ultimate budget finance app!",
+    "main": "server/server.js",
+    "scripts": {
+      "start": "node server --ignore client",
+      "develop": "concurrently \"cd server && npm run start\" \"cd client && npm run dev\"",
+      "install": "cd server && npm i && cd ../client && npm i",
+      "seed": "node server/config/seeds.js",
+      "build": "cd client && npm run build",
+      "render-build": "npm install && npm run build"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "devDependencies": {
+      "concurrently": "^8.2.2"
+    },
+    "dependencies": {
+      "carousel": "^0.0.3",
+      "cors": "^2.8.5",
+      "kute.js": "^2.2.4",
+      "mongodb": "^6.3.0",
+      "nodemailer": "^6.9.8",
+      "react-slick": "^0.29.0",
+      "slick": "^1.12.2",
+      "slick-carousel": "^1.8.1"
+    }
+  }
+  
