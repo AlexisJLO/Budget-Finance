@@ -1,12 +1,12 @@
-import { useState } from 'react';
-import { Link } from 'react-router-dom';
-import { useMutation } from '@apollo/client';
-import Auth from '../utils/auth.js';
-import { LOGIN_USER } from '../utils/mutations.js';
-//import './LoginPage.css'
+import { useState } from "react";
+import { Link } from "react-router-dom";
+import { useMutation } from "@apollo/client";
+import Auth from "../utils/auth.js";
+import { LOGIN_USER } from "../utils/mutations.js";
+import "../styles/LoginPage.css";
 
 const Login = () => {
-  const [formData, setFormData] = useState({ email: '', password: '' });
+  const [formData, setFormData] = useState({ email: "", password: "" });
   const [login, { error, data }] = useMutation(LOGIN_USER);
 
   const handleInputChange = (e) => {
@@ -28,12 +28,12 @@ const Login = () => {
       Auth.login(data.login.token);
     } catch (error) {
       console.error(error);
-      alert('Invalid Login');
+      alert("Invalid Login");
     }
 
     setFormData({
-      email: '',
-      password: '',
+      email: "",
+      password: "",
     });
   };
 
