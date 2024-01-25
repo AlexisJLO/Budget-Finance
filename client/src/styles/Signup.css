@@ -22,6 +22,7 @@
     border-radius: 4px;
     box-sizing: border-box;
     color: black;
+    background-color: #ffffff;
   }
   
   label {
@@ -63,8 +64,8 @@
   
   .toggle-password-btn {
     position: absolute;
-    top: 35%;
-    right: 10px;
+    top: 40%;
+    right: 0px;
     transform: translateY(-50%);
     color: #fff;
     border: none;
