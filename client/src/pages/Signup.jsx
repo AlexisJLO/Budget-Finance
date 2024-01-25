@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import showOn from "../assets/visibilityOn.png";
 import showOff from "../assets/visibilityOff.png";
-
+import "../styles/Signup.css";
 import { useMutation } from "@apollo/client";
 import { ADD_USER } from "../utils/mutations";
 import AuthService from "../utils/auth";
